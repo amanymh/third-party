@@ -1,0 +1,30 @@
+
+<br><br><br>
+<div [class]="theme">
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+<md-select placeholder="theme" [(ngModel)]="theme" (change)="onThemeChange()" style="margin-left:200px;">
+  <md-option *ngFor="let food of foods" [value]="food.value">
+    {{ food.viewValue }}
+  </md-option>
+</md-select>
+</div>
+  </div>
+<br><br>
+<md-card>
+  <h3>Mini Fab Buttons</h3>
+<div class="button-row">
+  <button md-mini-fab>Basic</button>
+  <button md-mini-fab color="primary">Primary</button>
+  <button md-mini-fab color="accent">Accent</button>
+  <button md-mini-fab color="warn">Warn</button>
+  <button md-mini-fab disabled>Disabled</button>
+  <button md-mini-fab>
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <a md-mini-fab routerLink=".">Link</a>
+</div>
+</md-card>
+
+</div>

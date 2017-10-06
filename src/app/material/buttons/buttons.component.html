@@ -1,0 +1,99 @@
+<div >
+  <br>
+<h5>Basic Buttons</h5>
+<div class="button-row" style="padding-left: 89px;">
+  <button md-button>Basic</button>
+  <button md-button color="primary">Primary</button>
+  <button md-button color="accent">Accent</button>
+  <button md-button color="warn">Warn</button>
+  <button md-button disabled>Disabled</button>
+  <a md-button routerLink=".">Link</a>
+</div>
+<br>
+<h5>Raised Buttons</h5>
+<br>
+<div class="button-row" style="padding-left: 89px;">
+  <button md-raised-button>Basic</button>
+  <button md-raised-button color="primary">Primary</button>
+  <button md-raised-button color="accent">Accent</button>
+  <button md-raised-button color="warn">Warn</button>
+  <button md-raised-button disabled>Disabled</button>
+  <a md-raised-button routerLink=".">Link</a>
+</div>
+<br><br>
+<div style="display:flex;">
+
+
+<div class="button-row" >
+  <h5>Icon Buttons</h5>
+  <br>
+  <div style="padding-left:20px;">
+  <button md-icon-button>
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <button md-icon-button color="primary">
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <button md-icon-button color="accent">
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <button md-icon-button color="warn">
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <button md-icon-button disabled>
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+</div>
+</div>
+<div style="padding-left:93px;" >
+  <h5>button toggle</h5>
+  <br>
+<md-button-toggle-group #group="mdButtonToggleGroup" style="margin-left:90px;">
+  <md-button-toggle value="left">
+    <md-icon>format_align_left</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="center">
+    <md-icon>format_align_center</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="right">
+    <md-icon>format_align_right</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="justify" disabled>
+    <md-icon>format_align_justify</md-icon>
+  </md-button-toggle>
+</md-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group.value}}</div>
+</div>
+</div>
+
+
+<!--<h3>Fab Buttons</h3>
+<div class="button-row">
+  <button md-fab>Basic</button>
+  <button md-fab color="primary">Primary</button>
+  <button md-fab color="accent">Accent</button>
+  <button md-fab color="warn">Warn</button>
+  <button md-fab disabled>Disabled</button>
+  <button md-fab>
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <a md-fab routerLink=".">Link</a>
+</div>-->
+
+<h5>Mini Fab Buttons</h5>
+<br>
+<div class="button-row" style="padding-left: 89px;">
+  <button md-mini-fab>Basic</button>
+  <button md-mini-fab color="primary">Primary</button>
+  <button md-mini-fab color="accent">Accent</button>
+  <button md-mini-fab color="warn">Warn</button>
+  <button md-mini-fab disabled>Disabled</button>
+  <button md-mini-fab>
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">favorite</md-icon>
+  </button>
+  <a md-mini-fab routerLink=".">Link</a>
+</div>
+<!--<a routerLink="/material">material home</a>-->
+<br>
+
+</div>

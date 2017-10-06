@@ -1,0 +1,27 @@
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link{
+       color: #266769;
+    background-color: white;
+    border-left: 2px solid #266769;
+    padding-left: 18px;
+    border-radius: 0px;
+    font-weight: bold;
+}
+.nav-link{
+    padding: 2px;
+    color: gray;
+    padding-left: 18px;
+
+}
+.nav-link:hover{
+  color: #266769;
+   font-weight: bold;
+}
+.title{
+ color:darkcyan;
+    font-weight:  700;
+    text-align: -webkit-center;
+    text-align: center;
+}
+.title:hover{
+ text-decoration: none;
+}

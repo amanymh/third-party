@@ -1,0 +1,67 @@
+<div style="margin:50px;">
+
+
+    <h5>Slider configuration</h5>
+
+    <section class="example-section">
+      <md-form-field class="example-margin">
+        <input mdInput type="number" placeholder="Value" [(ngModel)]="value">
+      </md-form-field>
+      <md-form-field class="example-margin">
+        <input mdInput type="number" placeholder="Min value" [(ngModel)]="min">
+      </md-form-field>
+      <md-form-field class="example-margin">
+        <input mdInput type="number" placeholder="Max value" [(ngModel)]="max">
+      </md-form-field>
+      <md-form-field class="example-margin">
+        <input mdInput type="number" placeholder="Step size" [(ngModel)]="step">
+      </md-form-field>
+    </section>
+
+    <section class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="showTicks">Show ticks</md-checkbox>
+      <md-checkbox class="example-margin" [(ngModel)]="autoTicks" *ngIf="showTicks">
+        Auto ticks
+      </md-checkbox>
+      <md-form-field class="example-margin" *ngIf="showTicks && !autoTicks">
+        <input mdInput type="number" placeholder="Tick interval" [(ngModel)]="tickInterval">
+      </md-form-field>
+    </section>
+    <div style="display:flex;">
+<div>
+    <section class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="thumbLabel">Show thumb label</md-checkbox>
+    </section>
+
+    <section class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="vertical">Vertical</md-checkbox>
+      <md-checkbox class="example-margin" [(ngModel)]="invert">Inverted</md-checkbox>
+    </section>
+
+    <section class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="disabled">Disabled</md-checkbox>
+    </section>
+</div>
+<div class="result" style="margin-left: 86px;">
+
+    <h5 class="example-h2">Result</h5>
+
+    <md-slider
+        class="example-margin"
+        [disabled]="disabled"
+        [invert]="invert"
+        [max]="max"
+        [min]="min"
+        [step]="step"
+        [thumb-label]="thumbLabel"
+        [tick-interval]="tickInterval"
+        [value]="value"
+        [vertical]="vertical">
+    </md-slider>
+
+</div>
+</div>
+
+
+
+</div>

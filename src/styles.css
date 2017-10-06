@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.side-menu{
+    height: 100vh;
+    max-height: 100%;
+   
+    background-color: #266769;
+padding-left: 17px;
+    padding-top: 21px;
+    
+}
+.side-menu-a{
+color: #d6cbcb;
+    font-size: 16px;
+    padding: 5px;
+  padding-left: 15px;
+}
+
+.side-menu-a :active{
+color: white;
+   
+}
+.side-menu>div {
+    margin: 5px;
+}
+ 
+ .side-menu > div> a:hover{
+     color: white;
+     text-decoration: none;
+       font-weight: 500;
+    
+ }
+  .side-menu > div> a:active{
+     color: white;
+     text-decoration: none;
+     
+ }
+.class1{
+  color: #d6cbcb;
+}
+.class2{
+   color: white;
+  font-weight: 500;
+}
+
+.angulr-ui{
+  margin-bottom: 45px;
+    margin-top: 27px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.angulr-ui > a {
+    color: white;
+     text-decoration: none;
+}
+.angulr-ui > a :hover {
+    color: white;
+      text-decoration: none;
+
+}
+
+.mat-mini-fab .mat-button-wrapper{
+    font-size: 10px;
+
+}

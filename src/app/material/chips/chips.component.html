@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-md-6">
+<h5 style="margin:30px;">
+  chips 
+</h5>
+<div style="margin:30px;">
+<md-form-field class="demo-chip-list">
+  <md-chip-list mdPrefix #chipList>
+    <md-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+             [removable]="removable" (remove)="remove(fruit)">
+      {{fruit.name}}
+      <md-icon mdChipRemove *ngIf="removable">cancel</md-icon>
+    </md-chip>
+  </md-chip-list>
+  <input mdInput placeholder="New fruit..."
+         [mdChipInputFor]="chipList"
+         [mdChipInputSeparatorKeyCodes]="separatorKeysCodes"
+         [mdChipInputAddOnBlur]="addOnBlur"
+         (mdChipInputTokenEnd)="add($event)" />
+</md-form-field>
+</div>
+  </div>
+  <div class="col-md-6">
+
+
+    <app-list></app-list> 
+  </div>
+
+</div>

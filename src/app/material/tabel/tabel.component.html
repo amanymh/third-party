@@ -1,0 +1,24 @@
+<p>
+  tabel works!
+</p>
+<div>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">tabel with filter</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">tabel with sort header</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link" id="pills-pagination-tab" data-toggle="pill" href="#pills-pagination" role="tab" aria-controls="pills-pagination" aria-expanded="true">tabel with pagination</a>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><app-filter-tabel></app-filter-tabel></div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><app-sortheader-tabel></app-sortheader-tabel></div>
+  <div class="tab-pane fade" id="pills-pagination" role="tabpanel" aria-labelledby="pills-pagination-tab"><app-tabel-pagination></app-tabel-pagination></div>
+
+  
+</div>  
+</div>

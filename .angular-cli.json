@@ -24,6 +24,8 @@
         "custom-theme.scss"
       ],
       "scripts": [
+         "../node_modules/devextreme/dist/css/dx.common.css", 
+        "../node_modules/devextreme/dist/css/dx.light.css", 
         "../node_modules/jquery/dist/jquery.min.js",
       "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],

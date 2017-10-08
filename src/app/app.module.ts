@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from './material/material.module';
 import { BootstrapModule} from './bootstrap/bootstrap.module';
-
+import { DevextremeModule} from './devextreme/devextreme.module';
 
 
 
@@ -21,6 +21,9 @@ import { NotfoundComponent } from './notfound.component';
 import { AppComponent } from './app.component';
 import { HomeAppComponent } from './home-app.component';
 import { InstallMaterialComponent } from './material/install-material/install-material.component';
+import { DevExtremeModule } from 'devextreme-angular';
+
+
 
 
 @NgModule({
@@ -29,11 +32,16 @@ import { InstallMaterialComponent } from './material/install-material/install-ma
     NotfoundComponent,
     HomeAppComponent,
     
+  
+  
+    
    
   ],
   imports: [
     BrowserModule,
   MaterialModule,
+  DevExtremeModule ,
+  DevextremeModule,
   BootstrapModule,
    AppRoutingModule,
     NgbModule.forRoot()

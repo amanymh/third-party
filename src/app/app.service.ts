@@ -7,18 +7,24 @@ export class Employee {
     LastName: string;
     Prefix: string;
     Position: string;
-    
+     Phone: string;
     BirthDate: string;
     HireDate: string;
     Notes: string;
     Address: string;
     StateID: number;
-    
+     Email: string;
 }
 
 export class State {
     ID: number;
     Name: string;
+}
+
+export class City {
+    ID: number;
+    Name: string;
+    StateID: number;
 }
 
 let employees: Employee[] = [{
@@ -29,16 +35,20 @@ let employees: Employee[] = [{
     "Position": "CEO",
     "BirthDate": "1964/03/16",
     "HireDate": "1995/01/15",
+      "Email": "jhesghjart@dx-email.com",
     "Notes": "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003.\r\n\r\nWhen not working hard as the CEO, John loves to golf and bowl. He once bowled a perfect game of 300.",
     "Address": "351 S Hill St.",
-    "StateID": 5
+    "StateID": 5,
+      "Phone": "(213) 555-9392"
 }, {
     "ID": 2,
     "FirstName": "Olivia",
     "LastName": "Peyton",
     "Prefix": "Mrs.",
+     "Phone": "(310) 555-2728",
     "Position": "Sales Assistant",
     "BirthDate": "1981/06/03",
+      "Email": "jananrt@dx-email.com",
     "HireDate": "2012/05/14",
     "Notes": "Olivia loves to sell. She has been selling DevAV products since 2012. \r\n\r\nOlivia was homecoming queen in high school. She is expecting her first child in 6 months. Good Luck Olivia.",
     "Address": "807 W Paseo Del Mar",
@@ -48,6 +58,8 @@ let employees: Employee[] = [{
     "FirstName": "Robert",
     "LastName": "Reagan",
     "Prefix": "Mr.",
+      "Email": "jhearkjhgt@dx-email.com",
+     "Phone": "(818) 555-2387",
     "Position": "CMO",
     "BirthDate": "1974/09/07",
     "HireDate": "2002/11/08",
@@ -59,6 +71,8 @@ let employees: Employee[] = [{
     "FirstName": "Greta",
     "LastName": "Sims",
     "Prefix": "Ms.",
+      "Email": "hgfhgart@dx-email.com",
+     "Phone": "(818) 555-6546",
     "Position": "HR Manager",
     "BirthDate": "1977/11/22",
     "HireDate": "1998/04/23",
@@ -70,7 +84,9 @@ let employees: Employee[] = [{
     "FirstName": "Brett",
     "LastName": "Wade",
     "Prefix": "Mr.",
+     "Phone": "(818) 559-6546",
     "Position": "IT Manager",
+      "Email": "jhaaaat@dx-email.com",
     "BirthDate": "1968/12/01",
     "HireDate": "2009/03/06",
     "Notes": "Brett came to DevAv from Microsoft and has led our IT department since 2012.\r\n\r\nWhen he is not working hard for DevAV, he coaches Little League (he was a high school pitcher).",
@@ -81,6 +97,8 @@ let employees: Employee[] = [{
     "FirstName": "Sandra",
     "LastName": "Johnson",
     "Prefix": "Mrs.",
+      "Email": "jhbbhht@dx-email.com",
+     "Phone": "(818) 585-6546",
     "Position": "Controller",
     "BirthDate": "1974/11/15",
     "HireDate": "2005/05/11",
@@ -92,6 +110,8 @@ let employees: Employee[] = [{
     "FirstName": "Kevin",
     "LastName": "Carter",
     "Prefix": "Mr.",
+      "Email": "jheart@dx-email.com",
+     "Phone": "(818) 955-6546",
     "Position": "Shipping Manager",
     "BirthDate": "1978/01/09",
     "HireDate": "2009/08/11",
@@ -103,6 +123,8 @@ let employees: Employee[] = [{
     "FirstName": "Cynthia",
     "LastName": "Stanwick",
     "Prefix": "Ms.",
+    "Email": "aevinc@dx-email.com",
+     "Phone": "(878) 555-6546",
     "Position": "HR Assistant",
     "BirthDate": "1985/06/05",
     "HireDate": "2008/03/24",
@@ -114,6 +136,8 @@ let employees: Employee[] = [{
     "FirstName": "Kent",
     "LastName": "Samuelson",
     "Prefix": "Dr.",
+    "Email": "kevinc@dx-email.com",
+     "Phone": "(818) 555-7546",
     "Position": "Ombudsman",
     "BirthDate": "1972/09/11",
     "HireDate": "2009/04/22",
@@ -125,6 +149,8 @@ let employees: Employee[] = [{
     "FirstName": "Taylor",
     "LastName": "Riley",
     "Prefix": "Mr.",
+     "Email": "brettw@dx-email.com",
+     "Phone": "(818) 551-6546",
     "Position": "Network Admin",
     "BirthDate": "1982/08/14",
     "HireDate": "2012/04/14",
@@ -136,8 +162,10 @@ let employees: Employee[] = [{
     "FirstName": "Sam",
     "LastName": "Hill",
     "Prefix": "Mr.",
+     "Phone": "(818) 955-6546",
     "Position": "Sales Assistant",
     "BirthDate": "1984/02/17",
+    "Email": "gretas@dx-email.com",
     "HireDate": "2012/02/01",
     "Notes": "Sammy is proud to be a member of the DevAV team. He joined the team in 2012 and has been in the sales department from the beginning.\r\n\r\nHe has just picked up golf so you can find him on the links every weekend.",
     "Address": "645 Prospect Crescent",
@@ -147,6 +175,8 @@ let employees: Employee[] = [{
     "FirstName": "Kelly",
     "LastName": "Rodriguez",
     "Prefix": "Ms.",
+     "Phone": "(818) 552-6546",
+     "Email": "robertr@dx-email.com",
     "Position": "Support Assistant",
     "BirthDate": "1988/05/11",
     "HireDate": "2012/10/13",
@@ -158,8 +188,10 @@ let employees: Employee[] = [{
     "FirstName": "Natalie",
     "LastName": "Maguirre",
     "Prefix": "Mrs.",
+     "Phone": "(818) 554-6546",
     "Position": "Trainer",
     "BirthDate": "1977/10/07",
+     "Email": "aliviap@dx-email.com",
     "HireDate": "2008/06/19",
     "Notes": "Natalie travels the US and teaches our partners how to explain the benefits of our products to customers.\r\n\r\nShe is a proud wife and mom and volunteers her time at the elementary school.",
     "Address": "6400 E Bixby Hill Rd",
@@ -169,7 +201,9 @@ let employees: Employee[] = [{
     "FirstName": "Walter",
     "LastName": "Hobbs",
     "Prefix": "Mr.",
+     "Phone": "(818) 575-6546",
     "Position": "Programmer",
+     "Email": "oliviap@dx-email.com",
     "BirthDate": "1984/12/24",
     "HireDate": "2011/02/17",
     "Notes": "Walter has been developing apps and websites for DevAV since 2011. His passion is software and if you ever walk by his desk, you'll know why.\r\n\r\nWally once worked 72 hours straight - writing code and fixing bugs.",
@@ -332,6 +366,88 @@ let states: State[] = [{
     "Name": "North Dakota"
 }];
 
+let cities: City[] = [{
+    "ID": 1,
+    "Name": "Tuscaloosa",
+    "StateID": 1
+}, {
+    "ID": 2,
+    "Name": "Hoover",
+    "StateID": 1
+}, {
+    "ID": 3,
+    "Name": "Dothan",
+    "StateID": 1
+}, {
+    "ID": 4,
+    "Name": "Decatur",
+    "StateID": 1
+}, {
+    "ID": 5,
+    "Name": "Anchorage",
+    "StateID": 2
+}, {
+    "ID": 6,
+    "Name": "Fairbanks",
+    "StateID": 2
+}, {
+    "ID": 7,
+    "Name": "Juneau",
+    "StateID": 2
+}, {
+    "ID": 8,
+    "Name": "Avondale",
+    "StateID": 3
+}, {
+    "ID": 9,
+    "Name": "Buckeye",
+    "StateID": 3
+}, {
+    "ID": 10,
+    "Name": "Carefree",
+    "StateID": 3
+}, {
+    "ID": 11,
+    "Name": "Springdale",
+    "StateID": 4
+}, {
+    "ID": 12,
+    "Name": "Rogers",
+    "StateID": 4
+}, {
+    "ID": 13,
+    "Name": "Sherwood",
+    "StateID": 4
+}, {
+    "ID": 14,
+    "Name": "Jacksonville",
+    "StateID": 4
+}, {
+    "ID": 15,
+    "Name": "Cabot",
+    "StateID": 4
+}, {
+    "ID": 16,
+    "Name": "Adelanto",
+    "StateID": 5
+}, {
+    "ID": 17,
+    "Name": "Glendale",
+    "StateID": 5
+}, {
+    "ID": 18,
+    "Name": "Moorpark",
+    "StateID": 5
+}, {
+    "ID": 19,
+    "Name": "Needles",
+    "StateID": 5
+}, {
+    "ID": 20,
+    "Name": "Ontario",
+    "StateID": 5
+}];
+
 @Injectable()
 export class Service {
     getEmployees() {
@@ -339,6 +455,9 @@ export class Service {
     }
     getStates() {
         return states;
+    }
+     getCities() {
+        return cities;
     }
 }
 

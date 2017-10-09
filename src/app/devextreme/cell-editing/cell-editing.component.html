@@ -1,3 +1,8 @@
+
+
+
+<div class="row">
+    <div style="margin:30px;border: 1px solid #dad4d4;">
 <div id="data-grid-demo">
     <dx-button id="gridDeleteSelected"
         text="Delete Selected Records"
@@ -26,7 +31,10 @@
         <dxi-column dataField="Prefix" caption="Title" [width]="55"></dxi-column>
         <dxi-column dataField="FirstName"></dxi-column>
         <dxi-column dataField="LastName"></dxi-column>
-        <dxi-column dataField="Position" [width]="170"></dxi-column>
+        <dxi-column dataField="Position" 
+        [width]="170"
+        [allowSorting]="!positionDisableSorting"
+        ></dxi-column>
         <dxi-column
             dataField="StateID"
             caption="State"
@@ -42,4 +50,16 @@
             dataType="date">
         </dxi-column>
     </dx-data-grid>
+</div>
+<div class="options">
+    <div class="caption">Options</div>
+    <div class="option">
+        <dx-check-box 
+            [(value)]="positionDisableSorting" 
+            (onValueChanged)="onValueChange($event)"
+            text="Disable Sorting for the Position Column"> 
+        </dx-check-box>
+    </div>
+</div>
+    </div>
 </div>

@@ -19,6 +19,7 @@ export class CellEditingComponent implements OnInit {
     dataSource: ArrayStore;
     states: State[];
     selectedItems: any[] = [];
+  positionDisableSorting = false;
 
     constructor(service: Service) {
         this.dataSource = new ArrayStore(service.getEmployees());
@@ -35,7 +36,11 @@ export class CellEditingComponent implements OnInit {
             this.dataGrid.instance.refresh();
         });
     }
-
+ onValueChange(e){
+        if(e.value) {
+            this.dataGrid.instance.columnOption(5, "sortOrder", undefined);
+        }
+    }
   ngOnInit() {
   }
 

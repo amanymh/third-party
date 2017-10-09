@@ -14,6 +14,8 @@ import { DatavalidationEditingComponent } from './datavalidation-editing/dataval
 import { FormEditingComponent } from './form-editing/form-editing.component';
 import { PopupEditingComponent } from './popup-editing/popup-editing.component';
 import { CascadingEditingComponent } from './cascading-editing/cascading-editing.component';
+import { GroupingTabelComponent } from './grouping-tabel/grouping-tabel.component';
+import { FiltringComponent } from './filtring/filtring.component';
 
 @NgModule({
   imports: [
@@ -24,6 +26,6 @@ import { CascadingEditingComponent } from './cascading-editing/cascading-editing
     DevextremeRoutingModule
 
   ],
-  declarations: [ HomeDevextremeComponent, SortTabelComponent, TabelComponent, BathEditingComponent, CellEditingComponent, DatavalidationEditingComponent, FormEditingComponent, PopupEditingComponent, CascadingEditingComponent]
+  declarations: [ HomeDevextremeComponent, SortTabelComponent, TabelComponent, BathEditingComponent, CellEditingComponent, DatavalidationEditingComponent, FormEditingComponent, PopupEditingComponent, CascadingEditingComponent, GroupingTabelComponent, FiltringComponent]
 })
 export class DevextremeModule { }

@@ -1,0 +1,83 @@
+
+
+
+<div class="row">
+    <div style="margin:10px 30px 10px 30px;border: 1px solid #dad4d4;   max-height: 400px;">
+
+<dx-data-grid 
+    id="gridContainer" 
+    [dataSource]="orders"
+      [allowColumnReordering]="true"
+      
+    >
+    
+    <dxo-filter-row 
+        [visible]="showFilterRow" 
+        [applyFilter]="applyFilter.value"></dxo-filter-row>
+    <dxo-header-filter 
+        [visible]="showHeaderFilter"></dxo-header-filter>
+    <dxo-search-panel 
+        [visible]="true" 
+        [width]="240" 
+        placeholder="Search..."></dxo-search-panel>
+           <dxo-paging [pageSize]="5"></dxo-paging>
+ <dxo-pager 
+        [showPageSizeSelector]="true"
+       [allowedPageSizes]="[2, 5, 10]"
+        [showInfo]="true">
+ </dxo-pager>
+    <dxi-column 
+        dataField="OrderNumber" 
+        [width]="130" 
+        caption="Invoice Number">
+        <dxo-header-filter 
+            [groupInterval]="10000"></dxo-header-filter>
+    </dxi-column>
+    <dxi-column 
+        dataField="OrderDate" 
+        alignment="right" 
+        dataType="date">
+        <dxo-header-filter 
+            [dataSource]="orderHeaderFilter"></dxo-header-filter>
+    </dxi-column>
+    <dxi-column 
+        dataField="SaleAmount" 
+        alignment="right" 
+        format="currency">
+        <dxo-header-filter 
+            [dataSource]="saleAmountHeaderFilter"></dxo-header-filter>
+    </dxi-column>
+    <dxi-column dataField="FirstName"></dxi-column>
+    <dxi-column 
+        dataField="LastName" 
+        caption="LastName"></dxi-column>
+  
+</dx-data-grid>
+<div class="options">
+    <div class="caption">Options</div>
+    <span  style="    display: inline-block;"
+        class="apply-filter option" 
+        [style.display]="showFilterRow ? 'inline-block' : 'none'">
+        <span>Apply Filter</span>
+        <dx-select-box #applyFilter 
+            id="useFilterApplyButton" 
+            [items]="applyFilterTypes" 
+            [value]="applyFilterTypes[0].key" 
+            valueExpr="key"
+            displayExpr="name"></dx-select-box>
+    </span>
+    <span class="option">
+    <dx-check-box 
+        text="Filter Row" 
+        [(value)]="showFilterRow" 
+        (onValueChanged)="clearFilter()"></dx-check-box>
+    </span>
+    <span class="option">
+    <dx-check-box 
+        text="Header Filter" 
+        [(value)]="showHeaderFilter" 
+        (onValueChanged)="clearFilter()"></dx-check-box>
+    </span>
+</div>
+    </div>
+</div>

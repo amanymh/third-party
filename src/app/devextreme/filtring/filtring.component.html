@@ -5,12 +5,11 @@
     <div style="margin:10px 30px 10px 30px;border: 1px solid #dad4d4;   max-height: 400px;">
 
 <dx-data-grid 
+
     id="gridContainer" 
     [dataSource]="orders"
-      [allowColumnReordering]="true"
-      
+      [allowColumnReordering]="true"  
     >
-    
     <dxo-filter-row 
         [visible]="showFilterRow" 
         [applyFilter]="applyFilter.value"></dxo-filter-row>
@@ -21,6 +20,7 @@
         [width]="240" 
         placeholder="Search..."></dxo-search-panel>
            <dxo-paging [pageSize]="5"></dxo-paging>
+           
  <dxo-pager 
         [showPageSizeSelector]="true"
        [allowedPageSizes]="[2, 5, 10]"
@@ -54,7 +54,9 @@
   
 </dx-data-grid>
 <div class="options">
-    <div class="caption">Options</div>
+    <div class="caption">Options 
+        
+    </div>
     <span  style="    display: inline-block;"
         class="apply-filter option" 
         [style.display]="showFilterRow ? 'inline-block' : 'none'">
@@ -79,5 +81,6 @@
         (onValueChanged)="clearFilter()"></dx-check-box>
     </span>
 </div>
+
     </div>
 </div>

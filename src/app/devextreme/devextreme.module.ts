@@ -17,6 +17,11 @@ import { CascadingEditingComponent } from './cascading-editing/cascading-editing
 import { GroupingTabelComponent } from './grouping-tabel/grouping-tabel.component';
 import { FiltringComponent } from './filtring/filtring.component';
 
+import { ColumnsComponent } from './columns/columns.component';
+import { MultiRowHeaderComponent } from './multi-row-header/multi-row-header.component';
+import { ColumnResizeComponent } from './column-resize/column-resize.component';
+import { ApperanceComponent } from './apperance/apperance.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -26,6 +31,12 @@ import { FiltringComponent } from './filtring/filtring.component';
     DevextremeRoutingModule
 
   ],
-  declarations: [ HomeDevextremeComponent, SortTabelComponent, TabelComponent, BathEditingComponent, CellEditingComponent, DatavalidationEditingComponent, FormEditingComponent, PopupEditingComponent, CascadingEditingComponent, GroupingTabelComponent, FiltringComponent]
+  declarations: [ HomeDevextremeComponent, 
+  SortTabelComponent, TabelComponent,
+   BathEditingComponent, CellEditingComponent, 
+   DatavalidationEditingComponent, FormEditingComponent,
+    PopupEditingComponent, CascadingEditingComponent, 
+    GroupingTabelComponent, FiltringComponent, 
+     ColumnsComponent, MultiRowHeaderComponent, ColumnResizeComponent, ApperanceComponent]
 })
 export class DevextremeModule { }

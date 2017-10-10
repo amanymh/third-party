@@ -1,0 +1,9 @@
+#gridContainer sup {
+    font-size: 0.8em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+#gridContainer{
+    max-width: 773px;
+}

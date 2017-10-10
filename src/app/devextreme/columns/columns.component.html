@@ -1,0 +1,43 @@
+<p>
+  columns works!
+</p>
+<dx-data-grid
+ #grid
+    id="gridContainer"
+    [dataSource]="employees"
+    [allowColumnReordering]="true"
+    [allowColumnResizing]="true"
+    [columnAutoWidth]="true"
+     [hoverStateEnabled]="true"
+    [selectedRowKeys]="[]"
+    >
+
+    <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+    <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+    <dxi-column
+        caption="Employee"
+        [width]="230"
+        [fixed]="true"
+        [calculateCellValue]="calculateCellValue"
+    ></dxi-column>
+    <dxo-paging [pageSize]="5"></dxo-paging>
+      <dxo-selection mode="single"></dxo-selection>
+    <dxi-column 
+     caption="Name,Birthday"
+    dataType="date"
+    [width]="55"
+      [calculateCellValue]="calculateCellValue2"
+    ></dxi-column>
+    <dxi-column dataField="HireDate" dataType="date"></dxi-column>
+    <dxi-column dataField="Position" alignment="right"></dxi-column>
+    <dxi-column dataField="Address" [width]="230"></dxi-column>
+    <dxi-column dataField="CityID" [visible]="false"></dxi-column>
+    <dxi-column dataField="StateID"></dxi-column>
+    <dxi-column dataField="SaleAmount" [visible]="false"></dxi-column>
+    <dxi-column dataField="Phone"></dxi-column>
+  
+    <dxi-column dataField="OrderDate"></dxi-column>
+    <dxi-column dataField="Email"></dxi-column>
+</dx-data-grid>
+<div id="employeeInfo" *ngIf="grid.selectedRowKeys.length">
+         <p class="employeeNotes">{{grid.selectedRowKeys[0].Notes}}</p></div>

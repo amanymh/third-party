@@ -1,0 +1,25 @@
+ #gridContainer {
+    max-height: 300px;
+}
+ #gridContainer sup {
+    font-size: 0.8em;
+    vertical-align: super;
+    line-height: 0;
+}
+.options {
+    padding: 10px;
+   
+    background-color: #f5f5f5;
+}
+.caption {
+    font-size: 18px;
+    font-weight: 500;
+}
+ 
+ .option > span {
+    margin-right: 10px;
+}
+ .option > .dx-widget {
+    display: inline-block;
+    vertical-align: middle;
+}

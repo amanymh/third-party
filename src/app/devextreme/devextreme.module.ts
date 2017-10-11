@@ -21,6 +21,8 @@ import { ColumnsComponent } from './columns/columns.component';
 import { MultiRowHeaderComponent } from './multi-row-header/multi-row-header.component';
 import { ColumnResizeComponent } from './column-resize/column-resize.component';
 import { ApperanceComponent } from './apperance/apperance.component';
+import { RightLeftTabelComponent } from './right-left-tabel/right-left-tabel.component';
+import { MasterDetailTabelComponent } from './master-detail-tabel/master-detail-tabel.component';
 
 @NgModule({
   imports: [
@@ -37,6 +39,6 @@ import { ApperanceComponent } from './apperance/apperance.component';
    DatavalidationEditingComponent, FormEditingComponent,
     PopupEditingComponent, CascadingEditingComponent, 
     GroupingTabelComponent, FiltringComponent, 
-     ColumnsComponent, MultiRowHeaderComponent, ColumnResizeComponent, ApperanceComponent]
+     ColumnsComponent, MultiRowHeaderComponent, ColumnResizeComponent, ApperanceComponent, RightLeftTabelComponent, MasterDetailTabelComponent]
 })
 export class DevextremeModule { }

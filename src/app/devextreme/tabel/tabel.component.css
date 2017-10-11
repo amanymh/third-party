@@ -5,12 +5,13 @@
     padding-left: 18px;
     border-radius: 0px;
     font-weight: bold;
+    font-size: 14px;
 }
 .nav-link{
     padding: 2px;
     color: gray;
     padding-left: 18px;
-
+font-size: 14px;
 }
 .nav-link:hover{
   color: #266769;

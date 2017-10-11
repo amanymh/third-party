@@ -1,0 +1,14 @@
+ #gridContainer {
+    max-height: 290px;
+}
+ .internal-grid-container {
+    padding: 4px 0 4px 0;
+}
+ .internal-grid-container > div:first-child {
+    padding: 0 0 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dx-datagrid-rowsview .dx-row > .dx-master-detail-cell {
+        padding: 0 30px 0 0;
+}

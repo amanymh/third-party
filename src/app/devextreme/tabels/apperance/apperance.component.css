@@ -12,3 +12,6 @@
     display: inline-block;
     margin-top: 10px;
 }
+#gridContainer{
+    min-width: 100%;
+}

@@ -8,6 +8,7 @@ import { NotfoundComponent } from './notfound.component';
 import { HomeMaterialComponent  } from './material/home-material/home-material.component';
 import { HomeBootstrapComponent } from './bootstrap/home-bootstrap/home-bootstrap.component';
 import { HomeDevextremeComponent } from './devextreme/home-devextreme/home-devextreme.component';
+import { TabelComponent } from './devextreme/tabels/tabel/tabel.component';
 import { AppComponent } from './app.component';
 import { HomeAppComponent } from './home-app.component';
 const routes: Routes = [
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: "devextreme",
     component:  HomeDevextremeComponent
+
+  },
+  {
+    path: "tabels",
+    component:  TabelComponent
 
   },
    {

@@ -44,6 +44,183 @@ export class City {
     Name: string;
     StateID: number;
 }
+export class Population {
+    country: string;
+    y014: number;
+    y1564: number;
+    y65: number;
+}
+
+export class Data {
+    day: string;
+    oranges: number;
+    
+}
+export class PopulationByRegion {
+    region: string;
+    val: number;
+}
+export class Product {
+    id: string;
+    name: string;
+    iconSrc?: string;
+    price?: number;
+    disabled?: boolean;
+    items?: Product[];
+}
+var products: Product[] = [{
+    id: "1",
+    name: "Video Players",
+    items: [{
+        id: "1_1",
+        name: "HD Video Player",
+        price: 220
+       
+    }, {
+        id: "1_2",
+        name: "SuperHD Video Player",
+      
+        price: 270
+    }]
+}, {
+    id: "2",
+    name: "Televisions",
+    items: [{
+        id: "2_1",
+        name: "SuperLCD 42",
+      
+        price: 1200
+    }, {
+        id: "2_2",
+        name: "SuperLED 42",
+     
+        price: 1450
+    }, {
+        id: "2_3",
+        name: "SuperLED 50",
+        
+        price: 1600
+    }, {
+        id: "2_4",
+        name: "SuperLCD 55 (Not available)",
+     
+        price: 1350,
+        disabled: true
+    }, {
+        id: "2_5",
+        name: "SuperLCD 70",
+    
+        price: 4000
+    }]
+},{
+    id: "3",
+    name: "Monitors",
+    items: [{
+        id: "3_1",
+        name: "19\"",
+        items: [{
+            id: "3_1_1",
+            name: "DesktopLCD 19",
+         
+            price: 160
+        }]
+    }, {
+        id: "3_2",
+        name: "21\"",
+        items: [{
+            id: "3_2_1",
+            name: "DesktopLCD 21",
+            
+            price: 170
+        }, {
+            id: "3_2_2",
+            name: "DesktopLED 21",
+            
+            price: 175
+        }]
+    }]
+
+
+   
+}];
+
+
+let populationByRegions: PopulationByRegion[] = [{
+    region: "Asia",
+    val: 4119626293
+}, {
+    region: "Africa",
+    val: 1012956064
+}, {
+    region: "Northern America",
+    val: 344124520
+}, {
+    region: "Latin America and the Caribbean",
+    val: 590946440
+}, {
+    region: "Europe",
+    val: 727082222
+}, {
+    region: "Oceania",
+    val: 35104756
+}];
+
+
+let data: Data[] = [{
+    day: "Monday",
+    oranges: 3
+}, {
+    day: "Tuesday",
+    oranges: 2
+}, {
+    day: "Wednesday",
+    oranges: 3
+}, {
+    day: "Thursday",
+    oranges: 4
+}, {
+    day: "Friday",
+    oranges: 6
+}, {
+    day: "Saturday",
+    oranges: 11
+}, {
+    day: "Sunday",
+    oranges: 4
+}];
+
+let populationData: Population[] = [{
+    country: "China",
+    y014: 320866959,
+    y1564: 853191410,
+    y65: 87774113
+}, {
+    country: "India",
+    y014: 340419115,
+    y1564: 626520945,
+    y65: 47063757
+}, {
+    country: "United States",
+    y014: 58554755,
+    y1564: 182172625,
+    y65: 34835293
+}, {
+    country: "Indonesia",
+    y014: 68715705,
+    y1564: 146014815,
+    y65: 10053690
+}, {
+    country: "Brazil",
+    y014: 50278034,
+    y1564: 113391494,
+    y65: 9190842
+}, {
+    country: "Russia",
+    y014: 26465156,
+    y1564: 101123777,
+    y65: 18412243
+}];
+
 
 let employees: Employee[] = [{
     "ID": 1,
@@ -233,7 +410,8 @@ let employees: Employee[] = [{
         "DueDate": "2013/03/10",
         "Status": "Completed",
         "Priority": "High",
-        "Completion": 100
+        "Completion": 100,
+        
     },  {
         "ID": 117,
         "Subject": "Approval on Converting to New HDMI Specification",
@@ -243,348 +421,8 @@ let employees: Employee[] = [{
         "Priority": "Normal",
         "Completion": 75
     }]
-}, {
-    "ID": 6,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Sandra",
-    "LastName": "Johnson",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    "Prefix": "Mrs.",
-    "OrderNumber": 39420,
-    "OrderDate": "2014/03/11",
-      "Email": "jhbbhht@dx-email.com",
-     "Phone": "(818) 585-6546",
-    "Position": "Controller",
-    "BirthDate": "1974/11/15",
-     "CityID": 6,
-      "SaleAmount": 20400,
-    "HireDate": "2005/05/11",
-    "Notes": "Sandra is a CPA and has been our conghghtroller since 2008. She loves to",
-    "Address": "4600 N Virginia Rd.",
-    "StateID": 44,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    }, {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 7,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    "FirstName": "Kevin",
-    "LastName": "Carter",
-    "Prefix": "Mr.",
-    "OrderNumber": 39874,
-    "OrderDate": "2014/03/01",
-      "Email": "jheart@dx-email.com",
-     "Phone": "(818) 955-6546",
-    "Position": "Shipping Manager",
-    "BirthDate": "1978/01/09",
-    "HireDate": "2009/08/11",
-     "CityID": 7,
-      "SaleAmount": 6050,
-    "Notes": "Kevin is our hard-working shipping manager and has been helping that .",
-    "Address": "424 N Main St.",
-    "StateID": 5,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    },  {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 8,
-    nameAr: "استونيا",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    nameEn: "Estonia",
-    "FirstName": "Cynthia",
-    "LastName": "Stanwick",
-    "Prefix": "Ms.",
-     "OrderNumber": 42847,
-    "OrderDate": "2014/09/01",
-    "Email": "aevinc@dx-email.com",
-     "Phone": "(878) 555-6546",
-    "Position": "HR Assistant",
-    "BirthDate": "1985/06/05",
-    "HireDate": "2008/03/24",
-     "CityID": 8,
-       "SaleAmount": 15850,
-    "Notes": "Cindy joined us in 2008 and has been in the HR department for 2 years. !",
-    "Address": "2211 Bonita Dr.",
-    "StateID": 4,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    },  {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 9,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Kent",
-    "LastName": "Samuelson",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-     "OrderNumber": 56272,
-    "Prefix": "Dr.",
-    "OrderDate": "2013/03/01",
-    "Email": "kevinc@dx-email.com",
-     "Phone": "(818) 555-7546",
-    "Position": "Ombudsman",
-    "BirthDate": "1972/09/11",
-     "CityID": 9,
-      "SaleAmount": 11050,
-    "HireDate": "2009/04/22",
-    "Notes": "As our ombudsman, Kent is on the fronthhhhhh-lines solving customerhestra.",
-    "Address": "12100 Mora Dr",
-    "StateID": 26,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    }, {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 10,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Taylor",
-    "LastName": "Riley",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    "Prefix": "Mr.",
-      "OrderNumber": 58292,
-    "OrderDate": "2014/03/06",
-     "Email": "brettw@dx-email.com",
-     "Phone": "(818) 551-6546",
-    "Position": "Network Admin",
-    "BirthDate": "1982/08/14",
-    "HireDate": "2012/04/14",
-     "CityID": 10,
-       "SaleAmount": 13500,
-    "Notes": "If you are like the rest of us at DevAV, hhhhhthen you've probablt.",
-    "Address": "7776 Torreyson Dr",
-    "StateID": 5,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    }, {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 11,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Sam",
-    "LastName": "Hill",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    "Prefix": "Mr.",
-     "OrderNumber": 65977,
-    "OrderDate": "2014/02/15",
-     "Phone": "(818) 955-6546",
-    "Position": "Sales Assistant",
-    "BirthDate": "1984/02/17",
-    "Email": "gretas@dx-email.com",
-    "HireDate": "2012/02/01",
-     "CityID": 11,
-       "SaleAmount": 3500,
-    "Notes": "Sammy is proud to be a member of the DevAV team. He joined the weekend.",
-    "Address": "645 Prospect Crescent",
-    "StateID": 11,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    },  {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 12,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Kelly",
-    "LastName": "Rodriguez",
-    "Prefix": "Ms.",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-     "OrderNumber": 68428,
-     "OrderDate": "2014/02/15",
-     "Phone": "(818) 552-6546",
-     "Email": "robertr@dx-email.com",
-    "Position": "Support Assistant",
-    "BirthDate": "1988/05/11",
-     "CityID": 12,
-      "SaleAmount": 14200,
-    "HireDate": "2012/10/13",
-    "Notes": "Kelly loves people and that's why she joined DevAV's suppor Factory.",
-    "Address": "1601 W Mountain St.",
-    "StateID": 5,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    },  {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 13,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-    "FirstName": "Natalie",
-    "LastName": "Maguirre",
-    "Prefix": "Mrs.",
-     "OrderNumber": 72947,
-     "OrderDate": "2014/07/15",
-     "Phone": "(818) 554-6546",
-      "CityID": 13,
-    "Position": "Trainer",
-    "BirthDate": "1977/10/07",
-     "Email": "aliviap@dx-email.com",
-    "HireDate": "2008/06/19",
-      "SaleAmount": 13350,
-    "Notes": "Natalie travels the US and teaches our partners t the elementary school.",
-    "Address": "6400 E Bixby Hill Rd",
-    "StateID": 29,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    }, {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
-}, {
-    "ID": 14,
-    nameAr: "استونيا",
-    nameEn: "Estonia",
-    "FirstName": "Walter",
-    "LastName": "Hobbs",
-    "Prefix": "Mr.",
-     capitalAr: "نيقوسيا",
-    capitalEn: "Nicosia",
-     "CityID": 14,
-      "OrderNumber": 73947,
-      "OrderDate": "2016/02/15",
-     "Phone": "(818) 575-6546",
-    "Position": "Programmer",
-     "SaleAmount": 14200,
-     "Email": "oliviap@dx-email.com",
-    "BirthDate": "1984/12/24",
-    "HireDate": "2011/02/17",
-    "Notes": "Walter has been developing apps and webs - writing code and fixing bugs.",
-    "Address": "10385 Shadow Oak Dr",
-    "StateID": 13,
-     "Tasks": [{
-        "ID": 16,
-        "Subject": "Deliver R&D Plans for 2013",
-        "StartDate": "2013/03/01",
-        "DueDate": "2013/03/10",
-        "Status": "Completed",
-        "Priority": "High",
-        "Completion": 100
-    },  {
-        "ID": 117,
-        "Subject": "Approval on Converting to New HDMI Specification",
-        "StartDate": "2014/01/11",
-        "DueDate": "2014/01/31",
-        "Status": "Deferred",
-        "Priority": "Normal",
-        "Completion": 75
-    }]
+
+
 }];
 
 let states: State[] = [{
@@ -834,6 +672,18 @@ export class Service {
     }
      getCities() {
         return cities;
+    }
+    getPopulationData(): Population[] {
+        return populationData;
+    }
+      getData(): Data[] {
+        return data;
+    }
+     getPopulationByRegions(): PopulationByRegion[] {
+        return populationByRegions;
+    }
+     getProducts(): Product[] {
+        return products;
     }
 }
 

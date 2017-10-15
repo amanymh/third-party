@@ -1,0 +1,63 @@
+<div id="accordion">
+    <dx-accordion
+        #accordion
+        [dataSource]=" employees"
+        [collapsible]="false"
+        [multiple]="false"
+        [animationDuration]="300"
+        [selectedItems]="[employees[0]]">
+        <div *dxTemplate="let company of 'title'">
+            <h1>{{company.FirstName}}</h1>
+        </div>
+        <div *dxTemplate="let company of 'item'">
+           
+                <p>
+                    <b>{{company.LastName}}</b>
+
+                </p>
+                <p>
+                    <span>{{company.Position}}</span>
+                
+                </p>
+          
+        </div>
+        
+    </dx-accordion>
+
+    <div class="selected-data">
+        <span class="caption">Selected Items</span>
+        <dx-tag-box
+            [dataSource]="employees"
+            displayExpr="FirstName"
+            [(value)]="accordion.selectedItems"
+            [disabled]="!accordion.multiple"
+        ></dx-tag-box>
+    </div>
+
+    <div class="options">
+        <div class="caption">Options</div>
+        <div class="option">
+            <dx-check-box
+                text="Multiple enabled"
+                [(value)]="accordion.multiple"
+            ></dx-check-box>
+        </div>    
+        <div class="option">            
+            <dx-check-box
+                text="Collapsible enabled"
+                [(value)]="accordion.collapsible"
+            ></dx-check-box>
+        </div>
+        <div class="option">
+            <span>Animation duration</span>
+            <dx-slider
+                [min]="0"
+                [max]="1000"
+                [(value)]="accordion.animationDuration"
+            >
+            <dxo-tooltip [enabled]="true" position="bottom"></dxo-tooltip>
+            <dxo-label [visible]="true"></dxo-label>
+            </dx-slider>
+        </div>       
+    </div>
+</div>

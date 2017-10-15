@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { Service } from './app.service';
 
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from './material/material.module';
@@ -49,7 +50,7 @@ import { DevExtremeModule } from 'devextreme-angular';
    
   ],
   entryComponents:[InstallMaterialComponent],
-  providers: [],
+  providers: [Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

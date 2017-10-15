@@ -5,24 +5,36 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DevextremeRoutingModule  } from './devextreme.routing';
 
 import { HomeDevextremeComponent } from './home-devextreme/home-devextreme.component';
-import { SortTabelComponent } from './sort-tabel/sort-tabel.component';
+import { SortTabelComponent } from './tabels/sort-tabel/sort-tabel.component';
 import { DevExtremeModule } from 'devextreme-angular';
-import { TabelComponent } from './tabel/tabel.component';
-import { BathEditingComponent } from './bath-editing/bath-editing.component';
-import { CellEditingComponent } from './cell-editing/cell-editing.component';
-import { DatavalidationEditingComponent } from './datavalidation-editing/datavalidation-editing.component';
-import { FormEditingComponent } from './form-editing/form-editing.component';
-import { PopupEditingComponent } from './popup-editing/popup-editing.component';
-import { CascadingEditingComponent } from './cascading-editing/cascading-editing.component';
-import { GroupingTabelComponent } from './grouping-tabel/grouping-tabel.component';
-import { FiltringComponent } from './filtring/filtring.component';
+import { TabelComponent } from './tabels/tabel/tabel.component';
+import { BathEditingComponent } from './tabels/bath-editing/bath-editing.component';
+import { CellEditingComponent } from './tabels/cell-editing/cell-editing.component';
+import { DatavalidationEditingComponent } from './tabels/datavalidation-editing/datavalidation-editing.component';
+import { FormEditingComponent } from './tabels/form-editing/form-editing.component';
+import { PopupEditingComponent } from './tabels/popup-editing/popup-editing.component';
+import { CascadingEditingComponent } from './tabels/cascading-editing/cascading-editing.component';
+import { GroupingTabelComponent } from './tabels/grouping-tabel/grouping-tabel.component';
+import { FiltringComponent } from './tabels/filtring/filtring.component';
 
-import { ColumnsComponent } from './columns/columns.component';
-import { MultiRowHeaderComponent } from './multi-row-header/multi-row-header.component';
-import { ColumnResizeComponent } from './column-resize/column-resize.component';
-import { ApperanceComponent } from './apperance/apperance.component';
-import { RightLeftTabelComponent } from './right-left-tabel/right-left-tabel.component';
-import { MasterDetailTabelComponent } from './master-detail-tabel/master-detail-tabel.component';
+import { ColumnsComponent } from './tabels/columns/columns.component';
+import { MultiRowHeaderComponent } from './tabels/multi-row-header/multi-row-header.component';
+import { ColumnResizeComponent } from './tabels/column-resize/column-resize.component';
+import { ApperanceComponent } from './tabels/apperance/apperance.component';
+import { RightLeftTabelComponent } from './tabels/right-left-tabel/right-left-tabel.component';
+import { MasterDetailTabelComponent } from './tabels/master-detail-tabel/master-detail-tabel.component';
+import { AreaChartsComponent } from './charts/area-charts/area-charts.component';
+import { ChartsComponent } from './charts/charts/charts.component';
+import { BarChartsComponent } from './charts/bar-charts/bar-charts.component';
+import { DoughnutChartsComponent } from './charts/doughnut-charts/doughnut-charts.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { DevMenuComponent } from './dev-menu/dev-menu.component';
+import { MultiViewComponent } from './multi-view/multi-view.component';
+import { DevtabsComponent } from './devtabs/devtabs.component';
+import { TreeViewComponent } from './tree-view/tree-view.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -39,6 +51,11 @@ import { MasterDetailTabelComponent } from './master-detail-tabel/master-detail-
    DatavalidationEditingComponent, FormEditingComponent,
     PopupEditingComponent, CascadingEditingComponent, 
     GroupingTabelComponent, FiltringComponent, 
-     ColumnsComponent, MultiRowHeaderComponent, ColumnResizeComponent, ApperanceComponent, RightLeftTabelComponent, MasterDetailTabelComponent]
+     ColumnsComponent,
+     MultiRowHeaderComponent, 
+     ColumnResizeComponent, ApperanceComponent, 
+     RightLeftTabelComponent, MasterDetailTabelComponent, 
+     AreaChartsComponent, ChartsComponent, BarChartsComponent, DoughnutChartsComponent, AccordionComponent, DevMenuComponent, MultiViewComponent, DevtabsComponent, TreeViewComponent],
+  providers: []
 })
 export class DevextremeModule { }

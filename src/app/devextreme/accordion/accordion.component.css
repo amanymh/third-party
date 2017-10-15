@@ -1,0 +1,33 @@
+ #accordion h1 {
+    font-size: 15px;
+}
+.options,
+.selected-data {    
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+ .selected-data {
+    position: relative;
+    height: 36px;
+}
+ .selected-data > .caption {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 115%;
+}
+.selected-data > .dx-widget {
+    position: absolute;
+    left: 140px;
+    right: 20px;
+    top: 20px;    
+}
+.options > .caption {
+    font-weight: 500;
+    font-size: 18px;
+}
+ .option {
+    margin-top: 10px;
+}

@@ -10,6 +10,7 @@ export class Task {
     Completion: number;
 }
 
+
 export class Employee {
     ID: number;
     FirstName: string;
@@ -68,6 +69,34 @@ export class Product {
     disabled?: boolean;
     items?: Product[];
 }
+export class Customer {
+    Login: string;
+    Password: string;
+    Name: string;
+    Date: Date;
+    Country: string;
+    City: string;
+    Address: string;
+    Phone: string;
+    Accepted: boolean;
+}
+let customer : Customer = {
+    "Login": "",
+    "Password": "",
+    "Name": "Peter",
+    "Date": null,
+    "Country": "",
+    "City": "",
+    "Address": "",
+    "Phone": "",
+    "Accepted": false
+};
+
+let countries: string[] = [
+    'Afghanistan','Albania','Algeria','Andorra','Angola'];
+
+
+
 var products: Product[] = [{
     id: "1",
     name: "Video Players",
@@ -684,6 +713,13 @@ export class Service {
     }
      getProducts(): Product[] {
         return products;
+    }
+    getCustomer() : Customer {
+        return customer;
+    }
+
+    getCountries() {
+        return countries;
     }
 }
 

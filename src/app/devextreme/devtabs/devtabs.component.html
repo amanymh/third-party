@@ -38,3 +38,29 @@
         </div>
     </div>
 </div>
+
+
+
+
+ <div id="form-container">
+    <dx-form id="form"
+        [formData]="employees"
+       >
+       
+         <dxi-item itemType="group" caption="Contact Information">
+            <dxi-item itemType="tabbed" [tabPanelOptions]="{ deferRendering: false }">
+                <dxi-tab title="Phone">
+                	<dxi-item dataField="Phone"></dxi-item>
+                </dxi-tab>
+                <dxi-tab title="Skype">
+                	<dxi-item dataField="Skype"></dxi-item>
+                </dxi-tab>
+                <dxi-tab title="LastName">
+                	<dxi-item dataField="LastName"></dxi-item>
+                </dxi-tab>
+            </dxi-item>
+        </dxi-item>
+       
+       
+    </dx-form>
+</div>

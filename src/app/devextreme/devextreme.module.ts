@@ -32,8 +32,13 @@ import { DevMenuComponent } from './dev-menu/dev-menu.component';
 import { MultiViewComponent } from './multi-view/multi-view.component';
 import { DevtabsComponent } from './devtabs/devtabs.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
+import { RangeSelectorComponent } from './range-selector/range-selector.component';
+import { RangeSliderComponent } from './range-slider/range-slider.component';
+import { CalenderComponent } from './calender/calender.component';
 
-
+import 'devextreme-intl';
+import { ColorBoxComponent } from './color-box/color-box.component';
 
 
 @NgModule({
@@ -55,7 +60,7 @@ import { TreeViewComponent } from './tree-view/tree-view.component';
      MultiRowHeaderComponent, 
      ColumnResizeComponent, ApperanceComponent, 
      RightLeftTabelComponent, MasterDetailTabelComponent, 
-     AreaChartsComponent, ChartsComponent, BarChartsComponent, DoughnutChartsComponent, AccordionComponent, DevMenuComponent, MultiViewComponent, DevtabsComponent, TreeViewComponent],
+     AreaChartsComponent, ChartsComponent, BarChartsComponent, DoughnutChartsComponent, AccordionComponent, DevMenuComponent, MultiViewComponent, DevtabsComponent, TreeViewComponent, FormValidationComponent, RangeSelectorComponent, RangeSliderComponent, CalenderComponent, ColorBoxComponent],
   providers: []
 })
 export class DevextremeModule { }

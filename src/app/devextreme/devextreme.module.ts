@@ -39,6 +39,15 @@ import { CalenderComponent } from './calender/calender.component';
 
 import 'devextreme-intl';
 import { ColorBoxComponent } from './color-box/color-box.component';
+import { LoadIndicatorComponent } from './load-indicator/load-indicator.component';
+import { PopupPopoverComponent } from './popup-popover/popup-popover.component';
+import { ToastProgressbarComponent } from './toast-progressbar/toast-progressbar.component';
+import { TimePipe } from './time.pipe';
+import { ContextMenuComponent } from './context-menu/context-menu.component';
+import { UploadingComponent } from './uploading/uploading.component';
+import { SliderComponent } from './slider/slider.component';
+import { ListEditingComponent } from './list-editing/list-editing.component';
+import { LookUpComponent } from './look-up/look-up.component';
 
 
 @NgModule({
@@ -60,7 +69,12 @@ import { ColorBoxComponent } from './color-box/color-box.component';
      MultiRowHeaderComponent, 
      ColumnResizeComponent, ApperanceComponent, 
      RightLeftTabelComponent, MasterDetailTabelComponent, 
-     AreaChartsComponent, ChartsComponent, BarChartsComponent, DoughnutChartsComponent, AccordionComponent, DevMenuComponent, MultiViewComponent, DevtabsComponent, TreeViewComponent, FormValidationComponent, RangeSelectorComponent, RangeSliderComponent, CalenderComponent, ColorBoxComponent],
+     AreaChartsComponent, ChartsComponent, BarChartsComponent,
+      DoughnutChartsComponent, AccordionComponent, DevMenuComponent,
+       MultiViewComponent, DevtabsComponent, TreeViewComponent,
+       FormValidationComponent, RangeSelectorComponent, RangeSliderComponent,
+        CalenderComponent, ColorBoxComponent, LoadIndicatorComponent, 
+        PopupPopoverComponent, ToastProgressbarComponent, TimePipe, ContextMenuComponent, UploadingComponent, SliderComponent, ListEditingComponent, LookUpComponent],
   providers: []
 })
 export class DevextremeModule { }

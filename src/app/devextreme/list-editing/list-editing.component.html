@@ -1,0 +1,53 @@
+<div id="list-api-demo">
+    <div class="widget-container">
+        <dx-list
+            [items]="tasks"
+            [height]="400"
+            [allowItemDeleting]="allowDeleting.value"
+             [selectionMode]="selectionMode.value"
+            [selectAllMode]="selectAllMode.value"
+            [itemDeleteMode]="deleteType.value"
+            [showSelectionControls]="true"
+           
+            [(selectedItems)]="selectedItems">
+        </dx-list>
+        <div class="selected-data">
+            <span class="caption">Selected Tasks:</span>
+            <span>{{selectedItems.join(", ")}}</span>
+        </div>
+    </div>    
+    <div class="options">
+        <div class="caption">Options</div>
+        <div class="option">
+            <dx-check-box
+                #allowDeleting
+                text="Allow deleting"
+                [value]="false">
+            </dx-check-box>
+        </div>
+        <div class="option">
+            <span>Deleting type</span>
+            <dx-select-box
+                #deleteType
+                [disabled]="!allowDeleting.value"
+                [items]="['static', 'toggle', 'slideButton', 'slideItem', 'swipe', 'context']"
+                value="toggle">
+            </dx-select-box>
+            <div class="option">
+             <span>Selection Mode</span>
+            <dx-select-box
+                #selectionMode
+                [items]="['none', 'single', 'multiple', 'all']"
+                value="all">
+            </dx-select-box>
+            </div>
+             <div class="option">
+            <span>Select All Mode</span>
+            <dx-select-box
+                #selectAllMode
+                [items]="['page', 'allPages']"
+                value="page">
+            </dx-select-box>
+        </div>
+    </div>
+</div>

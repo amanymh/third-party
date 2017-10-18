@@ -1,0 +1,18 @@
+ .dx-menu-item-content span {
+    margin-right: 5px;
+}
+ .dx-menu-item-has-submenu .dx-icon-spinright {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+}
+#image{
+
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+ .label {
+    color: #767676;
+}

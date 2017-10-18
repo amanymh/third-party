@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+<div id="toast">
+    <h1>Product List</h1>
+    <ul>
+        <li *ngFor="let product of products">
+           
+            <div id="name">{{product.name}}</div>
+            <dx-check-box 
+                text="Available" 
+                (onValueChanged)="checkAvailable($event, product)">
+            </dx-check-box>
+        </li>
+    </ul>
+
+  
+</div>
+
+<div class="form">
+    <dx-button 
+        id="progress-button"
+        [(text)]="buttonText"
+        (onClick)="onButtonClick()"
+        [width]="200">
+    </dx-button>
+    <div class="progress-info">
+        Time left {{second | time}}
+    </div>
+    <dx-progress-bar #progressBar
+        id="progress-bar-status"
+         width="90%"
+        [class.complete]="progressBar.value == maxValue"
+        [min]="0"
+        [max]="maxValue"
+        [statusFormat]="format"
+        [value]="maxValue - seconds">
+    </dx-progress-bar>
+</div>

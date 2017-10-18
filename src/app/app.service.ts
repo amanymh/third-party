@@ -79,6 +79,7 @@ export class Customer {
     Address: string;
     Phone: string;
     Accepted: boolean;
+    Lastname:string;
 }
 let customer : Customer = {
     "Login": "",
@@ -87,6 +88,7 @@ let customer : Customer = {
     "Date": null,
     "Country": "",
     "City": "",
+    "Lastname":"Adams",
     "Address": "",
     "Phone": "",
     "Accepted": false
@@ -690,6 +692,15 @@ let cities: City[] = [{
     "Name": "Ontario",
     "StateID": 5
 }];
+let images: string[] = [
+     
+    "assets/images/gallery/a1.jpg",
+    "assets/images/gallery/a2.jpg",
+    "assets/images/gallery/a3.jpg",
+    "assets/images/gallery/a4.jpg",
+    "assets/images/gallery/a5.jpg",
+    "assets/images/gallery/a7.jpg"
+    ];
 
 @Injectable()
 export class Service {
@@ -720,6 +731,9 @@ export class Service {
 
     getCountries() {
         return countries;
+    }
+     getImages() {
+        return images;
     }
 }
 

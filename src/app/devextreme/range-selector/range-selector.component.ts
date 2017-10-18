@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./range-selector.component.css']
 })
 export class RangeSelectorComponent implements OnInit {
-
+ 
   constructor() { }
 
+    
   ngOnInit() {
   }
 

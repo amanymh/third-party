@@ -1,0 +1,94 @@
+
+
+<div class="row">
+    <div class="col-md-4">
+<div class="form">
+    <div class="label">Custom size</div>
+    <dx-load-indicator id="small-indicator" height="20" width="20"></dx-load-indicator>
+    <dx-load-indicator id="medium-indicator" height="40" width="40"></dx-load-indicator>
+    <dx-load-indicator id="large-indicator" height="60" width="60"></dx-load-indicator>
+  
+   
+    <div class="label">Using with other widgets</div>
+    <dx-button
+        id="button"
+        [height]="40"
+        [width]="180"
+        (onClick)="onClick($event)">
+        <div *dxTemplate="let data of 'content'">
+            <dx-load-indicator class='button-indicator'
+                [visible]="loadIndicatorVisible">
+            </dx-load-indicator>
+            <span class='dx-button-text'>{{buttonText}}</span>
+        </div>
+    </dx-button>
+</div>
+    </div>
+    <div class="col-md-8">
+
+<h1>John Heart</h1>
+        
+<dx-button
+    text="Load Data"
+    (onClick)="showLoadPanel()">
+</dx-button>
+
+<div id="employee">
+    <p>
+        Birth date: <b>{{employeeInfo.Name}}</b>
+    </p>
+    <p class="address">
+        Address:<br />
+        <b>{{employeeInfo.Lastname}}</b><br />
+       
+        
+    </p>
+   
+</div>
+
+<dx-load-panel
+    #loadPanel
+    shadingColor="rgba(0,0,0,0.4)"
+    [position]="{ of: '#employee' }"
+    [(visible)]="loadingVisible"
+    [showIndicator]="true"
+    [showPane]="true"
+    [shading]="true"
+    [closeOnOutsideClick]="false"
+    (onShown)="onShown()"
+    (onHidden)="onHidden()">
+</dx-load-panel>
+
+<div class="options">  
+    <div class="caption">Options</div>
+    <div class="option">
+        <dx-check-box        
+            text="With indicator"
+            [(value)]="loadPanel.showIndicator">
+        </dx-check-box>
+    </div>
+    <div class="option">
+        <dx-check-box        
+            text="With overlay"
+            [(value)]="loadPanel.shading">
+        </dx-check-box>
+    </div>
+    <div class="option">    
+        <dx-check-box        
+            text="With pane"
+            [(value)]="loadPanel.showPane">
+        </dx-check-box>
+    </div>
+    <div class="option">    
+        <dx-check-box        
+            text="Close on outside click"
+            [(value)]="loadPanel.closeOnOutsideClick">
+        </dx-check-box>
+    </div>
+  </div>
+
+
+    </div>
+
+
+</div>

@@ -8,36 +8,6 @@
         [showNavButtons]="true"
     ></dx-tabs>
 </div>-->
-<div id="tabs">
-    <div class="caption">API</div>
-    <dx-tabs
-        #apiTabs
-        [dataSource]="employees"
-         displayExpr="FirstName"
-        [selectedIndex]="0"
-        (onItemClick)="selectTab($event)"
-    ></dx-tabs>
-    <div class="content dx-fieldset">
-        <div class="dx-field">
-            <div class="dx-field-label">Selected index:</div>
-            <div class="dx-field-value">
-                <dx-select-box
-                    [dataSource]="employees"
-                    displayExpr="FirstName"
-                    valueExpr="id"
-                    (onItemClick)="selectTab($event)"
-                    [(value)]="apiTabs.selectedIndex"
-                ></dx-select-box>
-            </div>
-        </div>
-        <div class="dx-field">
-            <div class="dx-field-label">Selected content:</div>
-            <div class="dx-field-value-static left-aligned">
-                {{tabContent}}
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -51,6 +21,7 @@
             <dxi-item itemType="tabbed" [tabPanelOptions]="{ deferRendering: false }">
                 <dxi-tab title="Phone">
                 	<dxi-item dataField="Phone"></dxi-item>
+                    
                 </dxi-tab>
                 <dxi-tab title="Skype">
                 	<dxi-item dataField="Skype"></dxi-item>

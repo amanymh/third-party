@@ -1,12 +1,10 @@
-<div class="label">
-    Right click an image to display the context menu:
-</div>
+
 <div>
-<span id="image"  (mouseenter)="toggleDefault()" 
+<span id="sp"  (mouseenter)="toggleDefault()" 
             (mouseleave)="toggleDefault()" >click here (context menu)</span>
              
         <dx-tooltip 
-            target="#image" 
+            target="#sp" 
             [(visible)]="defaultVisible">
             <div *dxTemplate="let data = data of 'content'">
              Right click
@@ -17,7 +15,7 @@
 <dx-context-menu 
     [dataSource]="dataSource" 
     [width]="200" 
-    target="#image" 
+    target="#sp" 
     
     (onItemClick)="itemClick($event)">
         <div *dxTemplate="let e of 'item'">

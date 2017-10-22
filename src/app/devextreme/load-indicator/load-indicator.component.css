@@ -46,14 +46,14 @@ h1 {
     height: 60px;
 }
  .options {
-     padding: 20px;
+     padding: 10px;
      background-color: #f5f5f5;
-     margin-top: 20px;
+     margin-top: 10px;
 }
  .caption {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
 }
  .option {
-    margin-top: 10px;
+    margin-top: 5px;
 }

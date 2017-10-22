@@ -1,3 +1,5 @@
+<div class="row">
+<div class="col-md-4">
 <div class="form">
     <dx-tree-view
         id="simple-treeview"
@@ -6,12 +8,19 @@
         parentIdExpr="categoryId"
         keyExpr="ID"
         displayExpr="name"
-        [width]="300"
+        [width]="200"
         (onItemClick)="selectItem($event)"
     ></dx-tree-view>
-    <div id="product-details" *ngIf="currentItem.price">
+   
+</div>
+</div>
+<div class="col-md-4">
+ <div id="product-details" *ngIf="currentItem.price">
        
         <div class="name">{{currentItem.name}}</div>
         <div class="price">{{"$" + currentItem.price}}</div>
     </div>
 </div>
+</div>
+
+

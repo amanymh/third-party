@@ -1,3 +1,6 @@
+<div class="form-dev">
+
+
 <form action="your-action" (submit)="onFormSubmit($event)">
     <dx-form id="form"
         [formData]="customer"
@@ -5,7 +8,7 @@
         [showColonAfterLabel]="true"
         [showValidationSummary]="false"
         validationGroup="customerData"
-          [colCount]="3">
+          [colCount]="1">
         <dxi-item itemType="group" caption="Credentials">
             <dxi-item dataField="Login">
                 <dxi-validation-rule 
@@ -137,7 +140,7 @@
         validationGroup="customerData"
         [useSubmitBehavior]="true">
     </dx-button>
-    <div class="dx-fieldset">
+   <!-- <div class="dx-fieldset">
         <div class="dx-field">
             <div class="dx-field-label">Switched on</div>
             <div class="dx-field-value">
@@ -152,5 +155,6 @@
             <div class="dx-field-value">
                 <dx-tag-box [items]="countries"></dx-tag-box>
             </div>
-        </div>
+        </div>-->
 </form>
+</div>

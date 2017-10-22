@@ -1,28 +1,7 @@
 <div class="form">
     <div class="dx-fieldset">
-        <div class="dx-field">
-            <div class="dx-field-label">Default mode</div>
-            <div class="dx-field-value">
-                <dx-range-slider 
-                    [min]="0" 
-                    [max]="100" 
-                    [start]="20" 
-                    [end]="60"
-                ></dx-range-slider>
-            </div>
-            </div>
-        <div class="dx-field custom-height-slider">
-            <div class="dx-field-label">With labels</div>
-            <div class="dx-field-value">
-                <dx-range-slider 
-                    [min]="0" 
-                    [max]="100" 
-                    [start]="35" 
-                    [end]="65"
-                    [label]="label"
-                ></dx-range-slider>
-            </div>
-        </div>
+       
+       
         <div class="dx-field custom-height-slider">
             <div class="dx-field-label">With tooltips</div>
             <div class="dx-field-value">
@@ -31,6 +10,7 @@
                     [max]="100" 
                     [start]="15" 
                     [end]="65"
+                     [label]="label"
                     [tooltip]="tooltip"
                 ></dx-range-slider>
             </div>
@@ -60,18 +40,7 @@
                 ></dx-range-slider>
             </div>
         </div>
-        <div class="dx-field">
-            <div class="dx-field-label">Disabled</div>
-            <div class="dx-field-value">
-                <dx-range-slider 
-                    [min]="0" 
-                    [max]="100" 
-                    [start]="25" 
-                    [end]="75"
-                    [disabled]="true"
-                ></dx-range-slider>
-            </div>
-        </div>
+       
     </div>
     <div class="dx-fieldset">
         <div class="dx-fieldset-header">Event Handling and API</div>

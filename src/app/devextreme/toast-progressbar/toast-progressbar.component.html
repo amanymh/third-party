@@ -6,7 +6,7 @@
 
 
 <div id="toast">
-    <h1>Product List</h1>
+    <h4>Product List</h4>
     <ul>
         <li *ngFor="let product of products">
            
@@ -20,15 +20,11 @@
 
   
 </div>
-
+<div>
+ <h4>Progress bar</h4>
 <div class="form">
-    <dx-button 
-        id="progress-button"
-        [(text)]="buttonText"
-        (onClick)="onButtonClick()"
-        [width]="200">
-    </dx-button>
-    <div class="progress-info">
+   
+    <div class="progress-info" style="padding-top:20px;">
         Time left {{second | time}}
     </div>
     <dx-progress-bar #progressBar
@@ -40,4 +36,12 @@
         [statusFormat]="format"
         [value]="maxValue - seconds">
     </dx-progress-bar>
+     <dx-button 
+        id="progress-button"
+        [(text)]="buttonText"
+        (onClick)="onButtonClick()"
+        style="margin-top:20px;"
+        [width]="200">
+    </dx-button>
+</div>
 </div>

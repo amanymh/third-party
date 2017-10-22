@@ -1,8 +1,11 @@
  #multiview {
     margin-top: 25px;
+    
 }
  .multiview-item {
     margin:25px;
+    cursor: pointer;
+    background-color: lightblue;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -11,7 +14,7 @@
     user-select: none;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    padding: 20px 0 30px;
+    padding: 20px 30px;
 }
  .multiview-item  > div {
     padding-top: 20px;

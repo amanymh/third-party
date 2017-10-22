@@ -48,6 +48,7 @@ import { UploadingComponent } from './uploading/uploading.component';
 import { SliderComponent } from './slider/slider.component';
 import { ListEditingComponent } from './list-editing/list-editing.component';
 import { LookUpComponent } from './look-up/look-up.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
 
 
 @NgModule({
@@ -74,7 +75,7 @@ import { LookUpComponent } from './look-up/look-up.component';
        MultiViewComponent, DevtabsComponent, TreeViewComponent,
        FormValidationComponent, RangeSelectorComponent, RangeSliderComponent,
         CalenderComponent, ColorBoxComponent, LoadIndicatorComponent, 
-        PopupPopoverComponent, ToastProgressbarComponent, TimePipe, ContextMenuComponent, UploadingComponent, SliderComponent, ListEditingComponent, LookUpComponent],
+        PopupPopoverComponent, ToastProgressbarComponent, TimePipe, ContextMenuComponent, UploadingComponent, SliderComponent, ListEditingComponent, LookUpComponent, SchedulerComponent],
   providers: []
 })
 export class DevextremeModule { }

@@ -1,25 +1,27 @@
+
+<div> drag your mouse right and left </div>
 <div id="multiview">
     <div>
         Item <span>{{multiview.selectedIndex + 1}}</span> of <span>{{itemCount}}</span>
     </div>
     <dx-multi-view
         #multiview
-        [height]="300"
+        [height]="200"
         [dataSource]="companies"
         [selectedIndex]="0"
         [loop]="false"
         [animationEnabled]="true">
         <div *dxTemplate="let company of 'item'">
             <div class="multiview-item">
-                <h1>{{company.CompanyName}}</h1>
+                <h1>{{company.FirstName}}</h1>
                 <div>
                     <p>
-                        <b>{{company.City}}</b>
-                        (<span>{{company.State}}</span>)
+                        <b>{{company.LastName}}</b>
+                     
                     </p>
                     <p>
-                        <span>{{company.Zipcode}}</span>
-                        <span>{{company.Address}}</span>
+                        <span>{{company.HireDate}}</span>
+                        <span>{{company.Email}}</span>
                     </p>
                 </div>
                

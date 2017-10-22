@@ -1,5 +1,5 @@
  .form {
-    min-height: 690px;
+    max-height: 450px;
 }
  .form .dx-field-value {
     text-align: right;

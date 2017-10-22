@@ -143,36 +143,6 @@ var products: Product[] = [{
     
         price: 4000
     }]
-},{
-    id: "3",
-    name: "Monitors",
-    items: [{
-        id: "3_1",
-        name: "19\"",
-        items: [{
-            id: "3_1_1",
-            name: "DesktopLCD 19",
-         
-            price: 160
-        }]
-    }, {
-        id: "3_2",
-        name: "21\"",
-        items: [{
-            id: "3_2_1",
-            name: "DesktopLCD 21",
-            
-            price: 170
-        }, {
-            id: "3_2_2",
-            name: "DesktopLED 21",
-            
-            price: 175
-        }]
-    }]
-
-
-   
 }];
 
 

@@ -3,15 +3,11 @@
 }
  #product-details {
     vertical-align: top;
-    width: 400px;
-    height: 420px;
+    width: 200px;
+    height: 200px;
     margin-left: 20px;
 }
- #product-details > img {
-    border: none;
-    height: 300px;
-    width: 400px;
-}
+
  #product-details > .name {
     text-align: center;
     font-size: 20px;

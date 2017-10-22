@@ -1,5 +1,5 @@
  #accordion h1 {
-    font-size: 15px;
+    font-size: 13px;
 }
 .options,
 .selected-data {    
@@ -31,3 +31,6 @@
  .option {
     margin-top: 10px;
 }
+.dx-accordion-item-body {
+    padding: 0px 13px 2px;
+    font-size: 14px;}

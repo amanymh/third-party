@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { Service } from './app.service';
+import { SchedulerService } from './scheduler.service';
 
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from './material/material.module';
@@ -50,7 +51,7 @@ import { DevExtremeModule } from 'devextreme-angular';
    
   ],
   entryComponents:[InstallMaterialComponent],
-  providers: [Service],
+  providers: [Service, SchedulerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

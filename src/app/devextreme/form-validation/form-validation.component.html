@@ -6,10 +6,10 @@
         [formData]="customer"
         [readOnly]="false"
         [showColonAfterLabel]="true"
-        [showValidationSummary]="false"
+        [showValidationSummary]="true"
         validationGroup="customerData"
-          [colCount]="1">
-        <dxi-item itemType="group" caption="Credentials">
+          [colCount]="2">
+        <dxi-item itemType="group" >    <!--caption="Credentials"-->
             <dxi-item dataField="Login">
                 <dxi-validation-rule 
                     type="required"
@@ -40,7 +40,7 @@
                 </dxi-validation-rule>
             </dxi-item>
         </dxi-item>
-        <dxi-item itemType="group" caption="Personal Data">
+        <dxi-item itemType="group" >
             <dxi-item dataField="Name">
                 <dxi-validation-rule 
                     type="required"
@@ -71,7 +71,7 @@
                 </dxi-validation-rule>
             </dxi-item>
         </dxi-item>
-        <dxi-item itemType="group" caption="Billing address">
+        <dxi-item itemType="group" >
             <dxi-item dataField="countries"
                 editorType="dxSelectBox"
                 [editorOptions]="{ dataSource: countries }">
@@ -96,12 +96,12 @@
                     message="City is required">
                 </dxi-validation-rule>
             </dxi-item>
-            <dxi-item dataField="Address">
+           <!-- <dxi-item dataField="Address">
                 <dxi-validation-rule 
                     type="required"
                     message="Address is required">
                 </dxi-validation-rule>
-            </dxi-item>
+            </dxi-item>-->
             <dxi-item dataField="Phone" helpText="Enter the phone number in USA phone format"
                 [editorOptions]="{ 
                     mask: '+1 (X00) 000-0000',
@@ -133,7 +133,7 @@
             </dxi-validation-rule>
         </dxi-item>
     </dx-form>
-    <br />
+   
     <dx-button
         text="Register"
         type="success"

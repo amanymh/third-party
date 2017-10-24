@@ -1,88 +1,182 @@
 <router-outlet></router-outlet>
+<div class="row">
+ <div class="col-md-9">
+    <div class="title" style=" margin-top: 9px;padding: 15px;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
+  0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 #266769;">DevExtreme Component</div>   
+<div class="tab-content" id="myTabContent" style="margin:30px;">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><app-form-validation></app-form-validation></div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><app-dev-menu></app-dev-menu></div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><app-calender></app-calender></div>
+  <div class="tab-pane fade" id="pop" role="tabpanel" aria-labelledby="pop-tab"><app-popup-popover></app-popup-popover></div>
+  <div class="tab-pane fade" id="over" role="tabpanel" aria-labelledby="over-tab"><app-bar-charts></app-bar-charts></div>
+  <div class="tab-pane fade" id="down" role="tabpanel" aria-labelledby="down-tab"> <app-doughnut-charts></app-doughnut-charts></div>
+  <div class="tab-pane fade" id="slid" role="tabpanel" aria-labelledby="slid-tab"><app-area-charts></app-area-charts></div>
+
+   <div class="tab-pane fade" id="oxo" role="tabpanel" aria-labelledby="oxo-tab"><app-load-indicator></app-load-indicator></div>
+  <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab"><app-multi-view></app-multi-view></div>
+  <div class="tab-pane fade" id="color" role="tabpanel" aria-labelledby="color-tab"><app-color-box></app-color-box></div>
+  <div class="tab-pane fade" id="uploading" role="tabpanel" aria-labelledby="uploading-tab"><app-uploading></app-uploading></div>
+  <div class="tab-pane fade" id="toast" role="tabpanel" aria-labelledby="toast-tab"> <app-toast-progressbar></app-toast-progressbar></div>
+  <div class="tab-pane fade" id="look" role="tabpanel" aria-labelledby="look-tab"><app-look-up></app-look-up></div>
+
+   <div class="tab-pane fade" id="accordion" role="tabpanel" aria-labelledby="accordion-tab"><app-accordion></app-accordion></div>
+  <div class="tab-pane fade" id="tree" role="tabpanel" aria-labelledby="tree-tab"><app-tree-view></app-tree-view></div>
+  <div class="tab-pane fade" id="devtabs" role="tabpanel" aria-labelledby="devtabs-tab"><app-devtabs></app-devtabs></div>
+  <div class="tab-pane fade" id="range" role="tabpanel" aria-labelledby="range-tab"><app-range-selector></app-range-selector></div>
+  <div class="tab-pane fade" id="fire" role="tabpanel" aria-labelledby="fire-tab"><app-range-slider></app-range-slider> </div>
+  <div class="tab-pane fade" id="context" role="tabpanel" aria-labelledby="context-tab"><app-context-menu></app-context-menu></div>
+
+   <div class="tab-pane fade" id="scheduler" role="tabpanel" aria-labelledby="scheduler-tab"><app-scheduler></app-scheduler></div>
+   
+</div>
+ </div>
+ <div class="col-md-3">
+   <div  style=" padding: 15px;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 #266769; margin-top: 10px;">
+  <a  routerLink="/home" class="title" style="    margin-left: 20px; " >Install DevExreme</a></div>
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="border-left: 1px solid #d4c7c7;">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Form validation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Calender</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="pop-tab" data-toggle="tab" href="#pop" role="tab" aria-controls="pop" aria-selected="false">popup-popover</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="over-tab" data-toggle="tab" href="#over" role="tab" aria-controls="over" aria-selected="false">Bar charts</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="down-tab" data-toggle="tab" href="#down" role="tab" aria-controls="down" aria-selected="false">Doughnut charts</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="slid-tab" data-toggle="tab" href="#slid" role="tab" aria-controls="slid" aria-selected="false">Area charts</a>
+  </li>
+
+ <li class="nav-item">
+    <a class="nav-link" id="oxo-tab" data-toggle="tab" href="#oxo" role="tab" aria-controls="oxo" aria-selected="false">load indicator</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="multi-tab" data-toggle="tab" href="#multi" role="tab" aria-controls="multi" aria-selected="false">Multi view</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="color-tab" data-toggle="tab" href="#color" role="tab" aria-controls="color" aria-selected="false">Color box</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="uploading-tab" data-toggle="tab" href="#uploading" role="tab" aria-controls="uploading" aria-selected="false">Uploading</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="toast-tab" data-toggle="tab" href="#toast" role="tab" aria-controls="toast" aria-selected="false">Toast progressbar </a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="look-tab" data-toggle="tab" href="#look" role="tab" aria-controls="look" aria-selected="false">look up</a>
+  </li>
 
 
+   <li class="nav-item">
+    <a class="nav-link" id="accordion-tab" data-toggle="tab" href="#accordion" role="tab" aria-controls="accordion" aria-selected="false">Accordion</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" id="tree-tab" data-toggle="tab" href="#tree" role="tab" aria-controls="tree" aria-selected="false">tree view</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" id="devtabs-tab" data-toggle="tab" href="#devtabs" role="tab" aria-controls="devtabs" aria-selected="false">Tabs</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" id="range-tab" data-toggle="tab" href="#range" role="tab" aria-controls="range" aria-selected="false">range selector</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" id="fire-tab" data-toggle="tab" href="#fire" role="tab" aria-controls="fire" aria-selected="false">Range slider</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" id="context-tab" data-toggle="tab" href="#context" role="tab" aria-controls="context" aria-selected="false">Context menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="scheduler-tab" data-toggle="tab" href="#scheduler" role="tab" aria-controls="scheduler" aria-selected="false">Scheduler </a>
+  </li>
+  
 
+
+</ul>
+ </div>
+</div>
+<!--
 <div class="container-fluid">
   <div class="row" style="height: 100vh; max-height: 100vh;">
     <div class="col-md-9">
- <div class="title" style=" margin-top: 9px;padding: 15px;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
-  0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 #266769;">DevExtreme Component</div>   
 
-<div class="tab-content" id="v-pills-tabContent" style="margin:30px;">
+
+<div class="tab-content" id="v-pills-tabContent" >
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
     
-<app-area-charts></app-area-charts>
+
   
   </div>
   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
- <app-bar-charts></app-bar-charts>
+ 
     </div>
   <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-  <app-doughnut-charts></app-doughnut-charts>
+ 
   </div>
  <div class="tab-pane fade" id="v-pills-accordio" role="tabpanel" aria-labelledby="v-pills-accordio-tab">
-<app-accordion></app-accordion>
+
   </div>
   <div class="tab-pane fade" id="v-pills-devmenu" role="tabpanel" aria-labelledby="v-pills-devmenu-tab">
-<app-dev-menu></app-dev-menu>
+
   </div>
    <div class="tab-pane fade" id="v-pills-multiview" role="tabpanel" aria-labelledby="v-pills-multiview-tab">
-<app-multi-view></app-multi-view>
+
   </div>
   <div class="tab-pane fade" id="v-pills-devtab" role="tabpanel" aria-labelledby="v-pills-devtab-tab">
-<app-devtabs></app-devtabs>
+
   </div>
    <div class="tab-pane fade" id="v-pills-treeview" role="tabpanel" aria-labelledby="v-pills-treeview-tab">
-<app-tree-view></app-tree-view>
+
   </div>
   <div class="tab-pane fade" id="v-pills-validate" role="tabpanel" aria-labelledby="v-pills-validate-tab">
-<app-form-validation></app-form-validation>
+
   </div>
    <div class="tab-pane fade" id="v-pills-rangselector" role="tabpanel" aria-labelledby="v-pills-rangselector-tab">
-<app-range-selector></app-range-selector>
+
   </div>
   <div class="tab-pane fade" id="v-pills-rangeslider" role="tabpanel" aria-labelledby="v-pills-rangeslider-tab">
-<app-range-slider></app-range-slider>
+
   </div>
   <div class="tab-pane fade" id="v-pills-devcalender" role="tabpanel" aria-labelledby="v-pills-devcalender-tab">
-<app-calender></app-calender>
+
   </div>
   <div class="tab-pane fade" id="v-pills-colorbox" role="tabpanel" aria-labelledby="v-pills-colorbox-tab">
-<app-color-box></app-color-box>
+
   </div>
    <div class="tab-pane fade" id="v-pills-load" role="tabpanel" aria-labelledby="v-pills-load-tab">
-<app-load-indicator></app-load-indicator>
+
   </div>
    <div class="tab-pane fade" id="v-pills-popup" role="tabpanel" aria-labelledby="v-pills-popup-tab">
-<app-popup-popover></app-popup-popover>
+
   </div>
     <div class="tab-pane fade" id="v-pills-toast" role="tabpanel" aria-labelledby="v-pills-toast-tab">
-<app-toast-progressbar></app-toast-progressbar>
   </div>
    <div class="tab-pane fade" id="v-pills-context" role="tabpanel" aria-labelledby="v-pills-context-tab">
-<app-context-menu></app-context-menu>
+
   </div>
   <div class="tab-pane fade" id="v-pills-upload" role="tabpanel" aria-labelledby="v-pills-upload-tab">
-<app-uploading></app-uploading>
+
   </div>
   <div class="tab-pane fade" id="v-pills-devslider" role="tabpanel" aria-labelledby="v-pills-devslider-tab">
-<!--<app-slider></app-slider>-->
+<app-slider></app-slider>
   </div>
    <div class="tab-pane fade" id="v-pills-devlist" role="tabpanel" aria-labelledby="v-pills-devlist-tab">
-<app-list-editing></app-list-editing>
+
   </div>
    <div class="tab-pane fade" id="v-pills-lookup" role="tabpanel" aria-labelledby="v-pills-lookup-tab">
-<app-look-up></app-look-up>
+
   </div>
   <div class="tab-pane fade" id="v-pills-scheduler" role="tabpanel" aria-labelledby="v-pills-scheduler-tab">
-<app-scheduler></app-scheduler>
+
   </div>
 </div>
 </div>
    
     <div class="col-md-3">
-<div  style=" padding: 10px;box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 #266769;">
-  <a  routerLink="/home" class="title" style="    margin-left: 20px; " >Install DevExreme</a></div>
+
 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" style="border-left: 1px solid #d4c7c7;  margin-top: 30px;">
   
   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true">Area Charts</a>
@@ -112,4 +206,4 @@
     </div>
   </div>
 </div> 
-</div>
+</div>-->

@@ -1,17 +1,22 @@
-.nav-pills .nav-link.active, .show>.nav-pills .nav-link{
+.nav .nav-link.active, .show>.nav .nav-link{
        color: #266769;
     background-color: white;
     border-left: 2px solid #266769;
     padding-left: 18px;
     border-radius: 0px;
     font-weight: bold;
+    display: inline-block;
+}
+.nav{
+     display: inline-block;
+
 }
 .nav-link{
     padding: 2px;
     color: gray;
     font-size: 12px;
     padding-left: 18px;
-
+display: inline-block;
 }
 .nav-link:hover{
   color: #266769;
@@ -25,4 +30,11 @@
 }
 .title:hover{
  text-decoration: none;
+}
+.nav-tabs .nav-link{
+    border: none ;
+}
+.nav-tabs{
+  border: none ;  
+  margin-top: 20px;
 }
